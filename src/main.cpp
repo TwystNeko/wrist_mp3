@@ -31,6 +31,7 @@
 #define T_MODE FALLING
 #define SD_FAT_TYPE 3
 
+#define MAX_SONGS 64
 
 
 
@@ -52,7 +53,7 @@ void play_pause(lv_event_t);
 void play_stop(lv_event_t);
 
 
-song_data songs[64];
+song_data songs[MAX_SONGS];
 int songidx = 0;
 int max_songidx = 0;
 touch_data tdata;
